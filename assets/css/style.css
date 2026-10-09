@@ -1,0 +1,724 @@
+/* =========================================================
+   DASAR
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020817;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container-evofest {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   NAVBAR
+   Dipakai jika navbar masih digunakan
+========================================================= */
+
+.navbar-evofest {
+    background-color: #071a33;
+    padding: 18px 30px;
+    border-bottom: 1px solid #123d66;
+}
+
+.navbar-evofest .brand {
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-evofest .brand i {
+    color: #38bdf8;
+    margin-right: 6px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #38bdf8;
+}
+
+
+/* =========================================================
+   TOMBOL UMUM
+========================================================= */
+
+.btn-evofest {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: #5cc8ff;
+    color: #06111f;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-evofest:hover {
+    background-color: #8ddcff;
+    color: #06111f;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HALAMAN PAKET CUSTOMER
+========================================================= */
+
+.paket-page {
+    min-height: 100vh;
+    padding: 70px 0 90px;
+    background-color: #020817;
+}
+
+
+/* =========================================================
+   JUDUL PAKET
+========================================================= */
+
+.paket-title {
+    text-align: center;
+    margin: 0 auto 45px;
+    max-width: 700px;
+}
+
+.paket-subtitle {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.paket-title h1 {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.paket-title > p:last-child {
+    color: #b8c7d9;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CARD PAKET
+========================================================= */
+
+.paket-card-user {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    border: 1px solid #174d7d;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease;
+}
+
+.paket-card-user:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+
+HEADER CARD PAKET */
+.paket-card-header {
+    background-color: #0b2b50;
+    padding: 25px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.paket-card-header i {
+    display: block;
+    color: #5cc8ff;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.paket-card-header h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ISI CARD PAKET */
+.paket-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 390px;
+    padding: 28px 25px;
+    background-color: #ffffff;
+}
+
+/* HARGA PAKET */
+.harga-label {
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.harga-paket {
+    text-align: center;
+    color: #0b2b50;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.harga-paket span {
+    color: #258dcc;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   GARIS PAKET
+========================================================= */
+
+.garis-paket {
+    height: 1px;
+    background-color: #d8e2eb;
+    margin: 20px 0;
+}
+
+
+/* =========================================================
+   FASILITAS PAKET
+========================================================= */
+
+.fasilitas-paket {
+    margin-bottom: 25px;
+}
+
+.fasilitas-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    margin-bottom: 12px;
+
+    color: #303b47;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.fasilitas-item i {
+    color: #258dcc;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+ /* TOMBOL BELI PAKET */
+.btn-beli-paket {
+    display: block;
+    width: 100%;
+
+    margin-top: auto;
+    padding: 12px 20px;
+
+    background-color: #5cc8ff;
+    color: #06111f;
+
+    border-radius: 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.btn-beli-paket:hover {
+    background-color: #8ddcff;
+    color: #06111f;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PAKET KOSONG
+========================================================= */
+
+.paket-kosong {
+    text-align: center;
+
+    background-color: #ffffff;
+    color: #263442;
+
+    border-radius: 20px;
+    padding: 60px 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.paket-kosong i {
+    color: #38bdf8;
+    font-size: 50px;
+}
+
+.paket-kosong h4 {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   HALAMAN BOOKING
+========================================================= */
+
+.booking-page {
+    min-height: 100vh;
+    padding: 60px 0 80px;
+    background-color: #020817;
+}
+
+.booking-card {
+    max-width: 700px;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+    color: #263442;
+
+    border-radius: 22px;
+    padding: 40px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   JUDUL BOOKING
+========================================================= */
+
+.booking-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.booking-title .detail-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0b2b50;
+    color: #5cc8ff;
+
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.booking-title h1 {
+    color: #0b2b50;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.booking-title p {
+    color: #687887;
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PAKET YANG DIPILIH
+========================================================= */
+
+.selected-package {
+    background-color: #edf7fc;
+    border: 1px solid #c5e8f8;
+
+    border-radius: 12px;
+    padding: 18px;
+
+    margin-bottom: 5px;
+}
+
+.selected-package p {
+    margin-bottom: 5px;
+    color: #71808e;
+    font-size: 13px;
+}
+
+.selected-package h3 {
+    color: #0b2b50;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.selected-package strong {
+    color: #258dcc;
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   JUDUL BAGIAN FORM
+========================================================= */
+
+.form-section-title {
+    color: #0b2b50;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #d8e2eb;
+}
+
+.form-section-title i {
+    color: #258dcc;
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   FORM BOOKING
+========================================================= */
+
+.booking-card .form-label {
+    color: #0b2b50;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.booking-card .form-control {
+    border: 1px solid #b8cbd9;
+    border-radius: 10px;
+    padding: 11px 13px;
+}
+
+.booking-card .form-control:focus {
+    border-color: #5cc8ff;
+
+    box-shadow:
+        0 0 0 0.2rem
+        rgba(92, 200, 255, 0.18);
+}
+
+
+/* =========================================================
+   PILIHAN LOKASI
+========================================================= */
+
+.location-option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.location-choice {
+    border: 1px solid #b8cbd9;
+    border-radius: 12px;
+
+    padding: 12px 15px;
+
+    background-color: #f8fbfd;
+
+    transition: 0.2s;
+}
+
+.location-choice:hover {
+    border-color: #5cc8ff;
+    background-color: #edf7fc;
+}
+
+.location-choice input {
+    margin-right: 8px;
+}
+
+.location-choice label {
+    color: #0b2b50;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.location-choice i {
+    color: #258dcc;
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   TOMBOL BOOKING
+========================================================= */
+
+.detail-button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-detail-kembali,
+.btn-detail-beli {
+    flex: 1;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-detail-kembali {
+    border: 1px solid #9eb5c8;
+    color: #0b2b50;
+    background-color: #ffffff;
+}
+
+.btn-detail-kembali:hover {
+    background-color: #edf7fc;
+    color: #0b2b50;
+}
+
+.btn-detail-beli {
+    border: none;
+    background-color: #5cc8ff;
+    color: #06111f;
+}
+
+.btn-detail-beli:hover {
+    background-color: #8ddcff;
+    color: #06111f;
+}
+
+
+/* ================================
+   HALAMAN EVENT
+================================ */
+
+.event-page {
+    min-height: 100vh;
+    padding: 60px 0 80px;
+    background-color: #020817;
+}
+
+
+/* JUDUL EVENT */
+
+.event-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.event-subtitle {
+    margin-bottom: 8px;
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.event-title h1 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.event-title > p:last-child {
+    margin: 0;
+    color: #dbeafe;
+    font-size: 14px;
+}
+
+
+/* CARD EVENT */
+
+.event-card {
+    height: 100%;
+    overflow: hidden;
+
+    background-color: #08203d;
+
+    border: 1px solid #164e78;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.25s ease;
+}
+
+.event-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-4px);
+}
+
+
+/* FOTO EVENT */
+
+.event-card-image {
+    width: 100%;
+    height: 190px;
+
+    overflow: hidden;
+
+    background-color: #0b2a4d;
+}
+
+.event-card-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* ISI CARD */
+
+.event-card-body {
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.event-card-body h3 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.event-card-body > p {
+    margin-bottom: 16px;
+
+    color: #dbeafe;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* INFORMASI EVENT */
+
+.event-info {
+    margin-top: auto;
+    padding-top: 13px;
+
+    border-top: 1px solid #164e78;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.event-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #e0f2fe;
+
+    font-size: 12px;
+}
+
+.event-info i {
+    color: #38bdf8;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .event-page {
+        padding: 40px 0 60px;
+    }
+
+    .event-title h1 {
+        font-size: 28px;
+    }
+
+    .event-card-image {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .event-title {
+        margin-bottom: 25px;
+    }
+
+    .event-card-image {
+        height: 210px;
+    }
+
+}
