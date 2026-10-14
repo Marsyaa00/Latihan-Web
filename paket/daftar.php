@@ -1,8 +1,8 @@
 <?php
-include "../config/koneksi.php";
+include "../koneksi.php";
 
 $query = "SELECT * FROM Paket_Event ORDER BY id_paket ASC";
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($koneksi, $query);
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +49,6 @@ $result = mysqli_query($conn, $query);
                     <div class="col-md-6 col-lg-4">
                         <div class="paket-card-user">
                             <div class="paket-card-header">
-                                <i class="bi bi-stars"></i>
 
                                 <h3>
                                     <?= htmlspecialchars($data['nama_paket']); ?>

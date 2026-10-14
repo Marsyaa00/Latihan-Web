@@ -1,5 +1,5 @@
 <?php
-include "../config/koneksi.php";
+include "../koneksi.php";
 
 if (!isset($_GET['id'])) {
     header("Location: index.php");
@@ -18,6 +18,6 @@ if (mysqli_query($conn, $query)) {
           </script>";
 
 } else {
-    echo "Data gagal untuk dihapus: " . mysqli_error($conn);
+    echo "Data gagal untuk dihapus: " . mysqli_error($koneksi);
 }
 ?>

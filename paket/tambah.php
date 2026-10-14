@@ -1,21 +1,21 @@
 <?php
 
-include "../config/koneksi.php";
+include "../koneksi.php";
 
 if (isset($_POST['simpan'])) {
 
     $nama_paket = mysqli_real_escape_string(
-        $conn,
+        $koneksi,
         $_POST['nama_paket']
     );
 
     $harga = mysqli_real_escape_string(
-        $conn,
+        $koneksi,
         $_POST['harga']
     );
 
     $deskripsi = mysqli_real_escape_string(
-        $conn,
+        $koneksi,
         $_POST['deskripsi']
     );
 
@@ -34,7 +34,7 @@ if (isset($_POST['simpan'])) {
         )
     ";
 
-    if (mysqli_query($conn, $query)) {
+    if (mysqli_query($koneksi, $query)) {
 
         echo "<script>
                 alert('Paket berhasil ditambahkan!');
@@ -44,7 +44,7 @@ if (isset($_POST['simpan'])) {
     } else {
 
         echo "Data gagal ditambahkan: "
-             . mysqli_error($conn);
+             . mysqli_error($koneksi);
 
     }
 }

@@ -1,5 +1,5 @@
 <?php
-include "../config/koneksi.php";
+include "../koneksi.php";
 
 if (!isset($_GET['id'])) {
     header("Location: daftar.php");
@@ -9,7 +9,7 @@ if (!isset($_GET['id'])) {
 $id = $_GET['id'];
 
 $query = mysqli_query(
-    $conn,
+    $koneksi,
     "SELECT * FROM Paket_Event WHERE id_paket = '$id'"
 );
 
@@ -53,21 +53,6 @@ if (!$data) {
 
 <body>
 
-<!-- NAVBAR -->
-
-<nav class="navbar-evofest">
-
-    <div class="container-evofest">
-
-        <a href="../index.php" class="brand">
-
-            <i class="bi bi-stars"></i>
-            EvoFest
-        </a>
-
-    </div>
-
-</nav>
 
 <!-- DETAIL PAKET -->
 

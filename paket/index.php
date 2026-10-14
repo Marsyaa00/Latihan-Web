@@ -1,9 +1,9 @@
 <?php
 
-include "../config/koneksi.php";
+include "../koneksi.php";
 
 $query = "SELECT * FROM Paket_Event ORDER BY id_paket DESC";
-$result = mysqli_query($conn, $query);
+$result = mysqli_query($koneksi, $query);
 
 ?>
 

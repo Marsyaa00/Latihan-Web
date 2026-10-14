@@ -162,7 +162,7 @@ body {
 }
 
 
-HEADER CARD PAKET */
+/* HEADER CARD PAKET */
 .paket-card-header {
     background-color: #0b2b50;
     padding: 25px 20px;
@@ -171,10 +171,7 @@ HEADER CARD PAKET */
 }
 
 .paket-card-header i {
-    display: block;
-    color: #5cc8ff;
-    font-size: 22px;
-    margin-bottom: 8px;
+    display: none;
 }
 
 .paket-card-header h3 {
@@ -722,3 +719,5 @@ HEADER CARD PAKET */
     }
 
 }
+
+/*

@@ -1,5 +1,5 @@
 <?php
-include "../config/koneksi.php";
+include "../koneksi.php";
 
 if (!isset($_GET['id'])) {
     header("Location: index.php");
@@ -9,7 +9,7 @@ if (!isset($_GET['id'])) {
 $id = $_GET['id'];
 
 $query = mysqli_query(
-    $conn,
+    $koneksi,
     "SELECT * FROM Paket_Event WHERE id_paket = '$id'"
 );
 
@@ -21,9 +21,9 @@ if (!$data) {
 
 if (isset($_POST['update'])) {
 
-    $nama_paket = mysqli_real_escape_string($conn, $_POST['nama_paket']);
-    $harga = mysqli_real_escape_string($conn, $_POST['harga']);
-    $deskripsi = mysqli_real_escape_string($conn, $_POST['deskripsi']);
+    $nama_paket = mysqli_real_escape_string($koneksi, $_POST['nama_paket']);
+    $harga = mysqli_real_escape_string($koneksi, $_POST['harga']);
+    $deskripsi = mysqli_real_escape_string($koneksi, $_POST['deskripsi']);
 
     $sql_update = "UPDATE Paket_Event SET
                     nama_paket = '$nama_paket',
@@ -31,7 +31,7 @@ if (isset($_POST['update'])) {
                     deskripsi = '$deskripsi'
                    WHERE id_paket = '$id'";
 
-    $update = mysqli_query($conn, $sql_update);
+    $update = mysqli_query($koneksi, $sql_update);
 
     if ($update) {
         echo "<script>
@@ -39,7 +39,7 @@ if (isset($_POST['update'])) {
                 window.location='index.php';
               </script>";
     } else {
-        echo "DATA GAGAL DIUBAH!! : " . mysqli_error($conn);
+        echo "DATA GAGAL DIUBAH!! : " . mysqli_error($koneksi);
     }
 }
 ?>
@@ -51,7 +51,7 @@ if (isset($_POST['update'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.8">
 
-    <title>Edit Paket - Ev</title>
+    <title>Edit Paket - EvoFest</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -60,15 +60,6 @@ if (isset($_POST['update'])) {
 </head>
 
 <body>
-    <nav class="navbar-evofest">
-        <div class="container-evofest">
-            <a href="../index.php" class="brand">
-                <i class="bi bi-stars"></i>
-                EVENT ENTERTAIMENT
-            </a>
-        </div>
-    </nav>
-
     <main class="container-evofest">
         <div class="card-evofest">
             <div class="mb-4">
