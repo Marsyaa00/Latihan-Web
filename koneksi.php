@@ -1,4 +1,5 @@
 <?php
+// --- KONFIGURASI KONEKSI MARSYA ---
 
 $host = "localhost";
 $username = "root";
@@ -16,3 +17,18 @@ if ($koneksi) {
 } else {
     echo "Koneksi Gagal";
 }   
+
+// --- KONFIGURASI KONEKSI MERRY
+/*
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "Event_Organizer";
+
+$koneksi = mysqli_connect($host, $user, $password, $database);
+
+if(!$koneksi){
+    die("Koneksi Database Gagal: " . mysqli_connect_error());
+}
+?>
+*/
