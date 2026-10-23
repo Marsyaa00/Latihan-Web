@@ -1,0 +1,11 @@
+event/
+paket/
+edit_event.php
+edit_klien.php
+edit_pembayaran.php
+event.php
+index.php
+klien.php
+pembaayaran.php
+tambah_klien.php
+tambah_pemabayaran.php

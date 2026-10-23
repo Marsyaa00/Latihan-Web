@@ -23,6 +23,9 @@ $email = $_SESSION['email'];
     <title>Dashbooard User</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+        .custom-navbar {
+            background-color : #1E293B !important;
+        }
         .hero {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/hero.jpg');
             background-size: cover;
@@ -87,7 +90,7 @@ $email = $_SESSION['email'];
         }
 
         .sidebar {
-            background-color: #0f2961;
+            background-color: #0F172A;
             min-height: calc(100vh - 56px);
             width: 220px;
             border: none;
@@ -113,7 +116,7 @@ $email = $_SESSION['email'];
         }
 
         .sidebar-header {
-            background-color: #212529;
+            background-color: #373a3d;
             color: #fff;
             font-weight: bold;
             text-align: center;
@@ -128,8 +131,8 @@ $email = $_SESSION['email'];
 
         .sidebar .nav-link:hover, 
         .sidebar .nav-link.active {
-            background-color: #0f2961;
-            color: #fff;
+            background-color: #50555f;
+            color: #f8fafc;
         }
 
         .content-area {
@@ -141,7 +144,7 @@ $email = $_SESSION['email'];
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue px-3">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <span class="open-slide">
             <a href="#" onclick="openSlideMenu();">
                 <svg width="30" height="30">

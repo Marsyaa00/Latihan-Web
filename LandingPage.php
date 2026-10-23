@@ -17,6 +17,13 @@ if ($login) {
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+        body { *//#101d2b*//    
+            background-color : #eaeff5;
+            color : #0d0d0e;
+        }
+        .custom-navbar {
+            background-color : #0a3f74fa !important;
+        }
         .hero {
             background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/hero.jpg');
             background-size : cover;
@@ -57,10 +64,16 @@ if ($login) {
         .service-card .card-body{
             padding: 20px;
         }
+        .about-section {
+            background-color: #1a2530;
+            color: #e2e2ec;
+            border-radius: 10px;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/LogoEvent.jpg" alt="logo">
@@ -141,7 +154,7 @@ if ($login) {
         </div>
     </section>
 
-    <section class="bg-light container mt-5">
+    <section class="about-section container mt-5 p-4">
         <div class="row">
             <h2 class="text-center mb-4">Tentang Kami</h2>
             <p class="text-center">Event Entertainment adalah perusahaan yang bergerak di bidang jasa EventOrganizer. 

@@ -122,6 +122,10 @@ $result = mysqli_query($koneksi, $query);
                     </div>
                 </div>
             <?php } ?>
+            <br><br>
+            <div style="text-align: left;">
+                <button class="col-2 btn btn-primary" onclick='window.location.href="../LandingPage.php"'>Kembali</button>
+            </div>
         </div>
     </div>
 </main>
